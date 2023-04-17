@@ -12,6 +12,11 @@
         android:theme="@style/Theme.TPAnexoA"
         tools:targetApi="31">
         <activity
+            android:name=".MiMenu"
+            android:exported="false"
+            android:label="@string/title_activity_mi_menu"
+            android:theme="@style/Theme.TPAnexoA.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
