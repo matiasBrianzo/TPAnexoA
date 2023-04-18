@@ -32,19 +32,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String username = etUsuario.getText().toString();
                 String password = etContrasenia.getText().toString();
-
-                viewModel.setUsuario(username);
-                viewModel.setContrasenia(password);
-                //viewModel.Validado()
-                //Nota: Sacar este logica de if
-                if (true) {
-                    // Las credenciales son válidas, continuar con la siguiente actividad
-                    Intent intent = new Intent(MainActivity.this, MiMenu.class);
-                    startActivity(intent);
-                } else {
-                    // Las credenciales son inválidas, mostrar un mensaje de error
-                    Toast.makeText(MainActivity.this, "Credenciales inválidas", Toast.LENGTH_SHORT).show();
-                }
+                viewModel.Validado(username,password);
             }
         });
     }
